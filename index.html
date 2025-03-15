@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vero Beach Concrete Concepts | Trusted Concrete Contractor</title>
     <meta name="description" content="Premium concrete solutions in Vero Beach. Durable, weather-resistant, and custom concrete services with hassle-free quotes.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+                url('https://source.unsplash.com/random/1920x1080/?concrete,construction');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body class="font-inter antialiased bg-white">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -23,7 +26,6 @@
             <div class="flex items-center justify-between">
                 <a href="https://Hidden-Knowledge.github.io/vero-beach-concrete-concepts---trusted-concrete-contractor-in-vero-beach-2025-03-05-fc6sb" class="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">VB Concrete</a>
                 
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
                     <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
@@ -33,13 +35,11 @@
                     <a href="#contact" class="bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">Contact Us</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
                 <button class="mobile-menu-button md:hidden" aria-label="Toggle Menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
             <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
                 <div class="flex flex-col space-y-4">
                     <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300 py-2">Services</a>
@@ -54,14 +54,36 @@
     </header>
 
     <main>
-        <section class="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <section class="hero-section pt-32 pb-20 text-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                         Transforming Vero Beach Properties with Expert Concrete Solutions
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8">Elevate your property with premium, long-lasting concrete installations backed by 20+ years of expertise and 100% satisfaction guarantee</p>
-                    <a href="#contact" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">Get Your Free Quote Today</a>
+                    <p class="text-xl text-gray-200 mb-8">Elevate your property with premium, long-lasting concrete installations backed by 20+ years of expertise and 100% satisfaction guarantee</p>
+                    <a href="#contact" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-white/20">Get Your Free Quote Today</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">See Our Work in Action</h2>
+                <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">Witness the expertise and craftsmanship that goes into every Vero Beach Concrete Concepts project.</p>
+                
+                <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/LRPzAUxMcIk" 
+                        title="Concrete Contractors in Vero Beach FL - Premium Concrete Solutions"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block bg-gray-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">Get Started with Your Project</a>
                 </div>
             </div>
         </section>
@@ -118,66 +140,109 @@
             </div>
         </section>
 
-        <section class="py-24 bg-white" id="testimonials">
+        <section class="py-24 bg-white" id="calculator">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Client Success Stories</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400 flex">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-gray-900 text-2xl mr-3"></i>
+                        <h2 class="text-3xl md:text-4xl font-bold text-center">Concrete Calculator</h2>
+                    </div>
+                    
+                    <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                        Estimate the amount of concrete needed for your project with our easy-to-use calculator.
+                    </p>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <button class="bg-gray-900 text-white py-3 px-4 rounded-lg active-calc-type" data-type="slab">Slab</button>
+                            <button class="bg-white text-gray-800 border border-gray-300 py-3 px-4 rounded-lg hover:bg-gray-100" data-type="column">Column</button>
+                            <button class="bg-white text-gray-800 border border-gray-300 py-3 px-4 rounded-lg hover:bg-gray-100" data-type="footing">Footing</button>
+                            <button class="bg-white text-gray-800 border border-gray-300 py-3 px-4 rounded-lg hover:bg-gray-100" data-type="wall">Wall</button>
+                        </div>
+                        
+                        <div id="slab-fields" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="space-y-2">
+                                <label for="length" class="block text-gray-700 font-medium">Length (ft)</label>
+                                <input id="length" type="number" min="0" step="0.1" placeholder="Enter length" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="width" class="block text-gray-700 font-medium">Width (ft)</label>
+                                <input id="width" type="number" min="0" step="0.1" placeholder="Enter width" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="depth" class="block text-gray-700 font-medium">Depth (in)</label>
+                                <input id="depth" type="number" min="0" step="0.1" placeholder="Enter depth" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-4">"VB Concrete transformed our dated driveway into a stunning stamped concrete masterpiece. The team completed the project two days ahead of schedule, and the attention to detail was impressive."</p>
-                        <p class="font-semibold">Sarah Johnson</p>
-                        <p class="text-sm text-gray-500">Homeowner in Vero Beach</p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400 flex">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        
+                        <div id="column-fields" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 hidden">
+                            <div class="space-y-2">
+                                <label for="diameter" class="block text-gray-700 font-medium">Diameter (in)</label>
+                                <input id="diameter" type="number" min="0" step="0.1" placeholder="Enter diameter" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="column-height" class="block text-gray-700 font-medium">Height (ft)</label>
+                                <input id="column-height" type="number" min="0" step="0.1" placeholder="Enter height" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-4">"As a commercial property manager, I've worked with many contractors. VB Concrete stands out for their professionalism and quality. Their weather-resistant concrete has withstood three hurricane seasons without issues."</p>
-                        <p class="font-semibold">Michael Rodriguez</p>
-                        <p class="text-sm text-gray-500">Property Manager, Ocean View Plaza</p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400 flex">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        
+                        <div id="footing-fields" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 hidden">
+                            <div class="space-y-2">
+                                <label for="footing-length" class="block text-gray-700 font-medium">Length (ft)</label>
+                                <input id="footing-length" type="number" min="0" step="0.1" placeholder="Enter length" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="footing-width" class="block text-gray-700 font-medium">Width (ft)</label>
+                                <input id="footing-width" type="number" min="0" step="0.1" placeholder="Enter width" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="footing-depth" class="block text-gray-700 font-medium">Depth (in)</label>
+                                <input id="footing-depth" type="number" min="0" step="0.1" placeholder="Enter depth" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-4">"The custom pool deck design exceeded our expectations. The non-slip surface and decorative borders have made our backyard feel like a resort."</p>
-                        <p class="font-semibold">Jennifer Martinez</p>
-                        <p class="text-sm text-gray-500">Custom Home Builder</p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400 flex">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        
+                        <div id="wall-fields" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 hidden">
+                            <div class="space-y-2">
+                                <label for="wall-length" class="block text-gray-700 font-medium">Length (ft)</label>
+                                <input id="wall-length" type="number" min="0" step="0.1" placeholder="Enter length" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="wall-width" class="block text-gray-700 font-medium">Width (in)</label>
+                                <input id="wall-width" type="number" min="0" step="0.1" placeholder="Enter width" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="wall-height" class="block text-gray-700 font-medium">Height (ft)</label>
+                                <input id="wall-height" type="number" min="0" step="0.1" placeholder="Enter height" class="w-full py-2 px-3 border border-gray-300 rounded-lg">
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-4">"We needed our restaurant patio expanded quickly during peak season. VB Concrete worked overnight to minimize disruption and delivered a beautiful, durable solution."</p>
-                        <p class="font-semibold">David Thompson</p>
-                        <p class="text-sm text-gray-500">Owner, Coastal Bistro</p>
+                        
+                        <div class="mt-8">
+                            <button id="calculate-btn" class="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                                Calculate
+                            </button>
+                        </div>
+                        
+                        <div id="result" class="mt-8 p-4 border-2 border-gray-200 rounded-lg bg-gray-50 hidden">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mt-1 mr-2"></i>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Calculation Result</h3>
+                                    <p id="result-text" class="text-gray-700"></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <p class="text-gray-500 text-sm text-center mt-6">
+                        Note: This calculator provides an estimate. For precise measurements, we recommend consulting with our experts.
+                    </p>
                 </div>
             </div>
         </section>
@@ -269,6 +334,10 @@
         </div>
     </footer>
 
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
@@ -296,8 +365,74 @@
                     });
                 });
             }
+            
+            const calculatorTypeButtons = document.querySelectorAll('[data-type]');
+            const calculateBtn = document.getElementById('calculate-btn');
+            const resultContainer = document.getElementById('result');
+            const resultText = document.getElementById('result-text');
+            
+            function switchCalculatorType(type) {
+                document.querySelectorAll('[id$="-fields"]').forEach(el => el.classList.add('hidden'));
+                document.getElementById(`${type}-fields`).classList.remove('hidden');
+                
+                calculatorTypeButtons.forEach(btn => {
+                    if (btn.dataset.type === type) {
+                        btn.classList.add('bg-gray-900', 'text-white');
+                        btn.classList.remove('bg-white', 'text-gray-800', 'border', 'border-gray-300', 'hover:bg-gray-100');
+                    } else {
+                        btn.classList.remove('bg-gray-900', 'text-white');
+                        btn.classList.add('bg-white', 'text-gray-800', 'border', 'border-gray-300', 'hover:bg-gray-100');
+                    }
+                });
+                
+                resultContainer.classList.add('hidden');
+            }
+            
+            calculatorTypeButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    switchCalculatorType(btn.dataset.type);
+                });
+            });
+            
+            calculateBtn.addEventListener('click', () => {
+                let volume = 0;
+                const activeType = document.querySelector('.active-calc-type')?.dataset.type || 'slab';
+                
+                switch(activeType) {
+                    case 'slab':
+                        const length = parseFloat(document.getElementById('length').value) || 0;
+                        const width = parseFloat(document.getElementById('width').value) || 0;
+                        const depth = parseFloat(document.getElementById('depth').value) || 0;
+                        volume = (length * width * depth) / 12;
+                        break;
+                    case 'column':
+                        const diameter = parseFloat(document.getElementById('diameter').value) || 0;
+                        const columnHeight = parseFloat(document.getElementById('column-height').value) || 0;
+                        volume = Math.PI * Math.pow(diameter / 2, 2) * columnHeight / 12;
+                        break;
+                    case 'footing':
+                        const footingLength = parseFloat(document.getElementById('footing-length').value) || 0;
+                        const footingWidth = parseFloat(document.getElementById('footing-width').value) || 0;
+                        const footingDepth = parseFloat(document.getElementById('footing-depth').value) || 0;
+                        volume = (footingLength * footingWidth * footingDepth) / 12;
+                        break;
+                    case 'wall':
+                        const wallLength = parseFloat(document.getElementById('wall-length').value) || 0;
+                        const wallWidth = parseFloat(document.getElementById('wall-width').value) || 0;
+                        const wallHeight = parseFloat(document.getElementById('wall-height').value) || 0;
+                        volume = (wallLength * wallHeight * wallWidth) / 12;
+                        break;
+                }
+                
+                const cubicYards = volume / 27;
+                const bags = Math.ceil(cubicYards * 90);
+                
+                resultText.textContent = `You need approximately ${cubicYards.toFixed(2)} cubic yards of concrete (about ${bags} 40-lb bags).`;
+                resultContainer.classList.remove('hidden');
+            });
+            
+            switchCalculatorType('slab');
         });
     </script>
-</body>
 </body>
 </html>
